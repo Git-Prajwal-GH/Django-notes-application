@@ -22,8 +22,8 @@
 3. Configure Jenkins to use the GitHub repository.
 ![capture](1)
 4. Configure Jenkins to build the Docker image.
->[Pipeline](django-notes-app-files/jenkinsfile)
--  
+>[Pipeline](https://github.com/Git-Prajwal-GH/Django-notes-application/blob/dac798952d0144cdcf3f9679f09c650a4ef4055c/django-notes-app-files/jenkinsfile)
+
 
 <!--
 ![alt text](jpg_image
