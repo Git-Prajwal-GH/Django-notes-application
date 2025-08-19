@@ -1,4 +1,6 @@
-# Git -> Docker -> Docker_Hub 
+# Git -> Jenkkins -> Docker -> Docker_Hub 
+![notes-app-sketch](https://github.com/user-attachments/assets/e9f59d88-6271-4ff7-867a-14dde95ded28)
+
 ## Pre-requites
 1.EC2 instance
 - Ubuntu OS AMI
@@ -20,4 +22,6 @@
 >[Pipeline](jenkins_file.groovy)
 -  
 
-![alt text](jpg_image)
+<!--
+![alt text](jpg_image
+-->
