@@ -28,3 +28,9 @@
 <!--
 ![alt text](jpg_image
 -->
+
+<img width="1526" height="948" alt="image" src="https://github.com/user-attachments/assets/6897676f-1c18-49d8-a7e3-6db27b5daac1" />
+
+<img width="1741" height="923" alt="image" src="https://github.com/user-attachments/assets/40a336d0-80e5-4753-b7cf-21469ba92efc" />
+
+<img width="1736" height="942" alt="image" src="https://github.com/user-attachments/assets/d198c67f-192b-467a-815b-dda5b7e705f3" />
