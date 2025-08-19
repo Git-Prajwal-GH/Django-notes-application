@@ -11,19 +11,19 @@ pipeline{
         stage('Image Build'){
             steps{
                 echo "Docker image building"
-                sh "whoami"
-                sh "docker build -t notes-app:latest ."
+                sh "whoami" // ubuntu
+                sh "docker build -t notes-app:latest ." // build the docker image
             }
         }
         stage("Push to DockerHub"){
             steps{
                 echo "Docker image pushing to DockerHub"
-                withCredentials([usernamePassword(
-                    'credentialsId':"dockerhub-cred",
-                    passwordVariable:"dockerHubPass",
-                    usernameVariable:"dockerHubUser")]){
+                withCredentials([usernamePassword('credentialsId':"dockerhub-cred",passwordVariable:"dockerHubPass",usernameVariable:"dockerHubUser")]){
+                // Login to DockerHub-  .DockerHubId.        .DockerHub tokenpass.
                 sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPass} "
+                // Tag the image
                 sh "docker image tag notes-app:latest ${env.dockerHubUser}/notes-app:latest"
+                // Push the image
                 sh "docker push ${env.dockerHubUser}/notes-app:latest"
                 }
             }
@@ -31,7 +31,7 @@ pipeline{
         stage("Deploy"){
             steps{
                 echo "This is deploying the code"
-                sh "docker run --name c1 -p 8000:8000 notes-app:latest"
+                sh "docker run --name c1 -p 8000:8000 notes-app:latest"  // run the docker container
             }
         }
     }
