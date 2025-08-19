@@ -1,4 +1,4 @@
-# Git -> Jenkkins -> Docker -> Docker_Hub 
+# Overview
 ![notes-app-sketch](https://github.com/user-attachments/assets/e9f59d88-6271-4ff7-867a-14dde95ded28)
 
 ## Pre-requites
