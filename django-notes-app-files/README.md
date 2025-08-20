@@ -34,3 +34,23 @@
 <img width="1741" height="923" alt="image" src="https://github.com/user-attachments/assets/40a336d0-80e5-4753-b7cf-21469ba92efc" />
 
 <img width="1736" height="942" alt="image" src="https://github.com/user-attachments/assets/d198c67f-192b-467a-815b-dda5b7e705f3" />
+
+install jenkins
+login to jenkins web
+install docker
+sudo apt-get install docker.io
+In jenkins credentials add dockerhub username and token **must** in password
+change point in pipeline:
+1. change in pipeline under 'withcredentials' after 'credentialsId:__________'
+2. image name 
+```
+sudo usermod -aG docker jenkins
+```
+```
+sudo usermod -aG docker ubuntu
+```
+- To check group use this command
+```
+sudo cat /etc/group | tail -5
+```
+- If any issue while pipeline build, just **reboot** the instance.
